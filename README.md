@@ -5,3 +5,5 @@ This is the Official & Published code of [Chaus](https://discord.com/oauth2/auth
 # ⚠️ Alert ⚠️
 
 The **Old** Chaus with the tag #9323 will not be recieving updates at all. The Bot that will be getting updates is Chaus#2678.
+
+To see all of the Code, change from main to master
