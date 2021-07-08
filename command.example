@@ -1,0 +1,22 @@
+const { MessageEmbed } = require('discord.js');
+const Command = require('../../Structures/Command');
+const colourembed = require("../../../shortcutembedcolor.json")
+
+module.exports = class extends Command {
+
+	constructor(...args) {
+		super(...args, {
+			aliases: [],
+			description: '',
+			category: '',
+			usage: '',
+			guildOnly: true,
+			cooldown: 3000
+		});
+	}
+
+	async run(message, args) {
+		
+	}
+
+};

@@ -1,0 +1,34 @@
+const mongoose = require('mongoose');
+
+require('dotenv').config()
+
+module.exports = {
+    init: () => {
+        const dbOptions = {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            autoIndex: false,
+            reconnectTries: Number.MAX_VALUE,
+            reconnectInterval: 500,
+            poolSize: 5,
+            connectTimeoutMS: 10000,
+            family:4
+        };
+
+        mongoose.connect(process.env.MONGOOSEPASSWORD, dbOptions);
+        mongoose.set('useFindAndModify', false);
+        mongoose.Promise = global.Promise;
+
+        mongoose.connection.on('connected', () => {
+            console.log('Succesfully logged in Mongoose.');
+        });
+
+        mongoose.connection.on('err', err => {
+            console.error(`Mongoose connection error: \n${err.stack}`);
+        });
+
+        mongoose.connection.on('disconnected', () => {
+            console.warn('Connection lost on Mongoose.');
+        });
+    }
+}

@@ -1,0 +1,9 @@
+const Event = require('../Structures/Event');
+const colourembed = require('../../shortcutembedcolor.json')
+
+module.exports = class extends Event {
+
+    async run() {
+        
+    }
+};

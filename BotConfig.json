@@ -1,0 +1,7 @@
+{
+    "regular_prefix": "PUT_THE_PREFIX_YOU_WANT_HERE",
+    "BotOwner": ["PUT_YOUR_ID_HERE"],
+    "SupportServerID": "PUT_YOUR_SERVER_HERE",
+    "Administration": "PUT_ADMIN_ROLE_HERE",
+    "TopGGToken": "PUT_YOUR_TOPGG_AUTH_HERE"
+}
